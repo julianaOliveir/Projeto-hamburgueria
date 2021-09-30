@@ -1,8 +1,11 @@
 header{
     display: flex;
-    width: inherit;
+    width: 90%;
     height: 80px;
-    background-color: lightcoral;
+    align-self: center;
+    justify-self: space;
+    justify-content: center;
+    /* background-color: darkgray; */
 }
 
 #img-logo{
@@ -10,12 +13,12 @@ header{
     width: 170px;
     margin-left: 100px;
     margin-top: 5px;
-    background-color: lawngreen;
 }
 
 #box-menu{
     height: inherit;
     width: 900px;
+    font-family: 'Inter', sans-serif;
 }
 
 #lista-menu{
@@ -27,9 +30,13 @@ header{
 }
 
 #lista-menu > li{
-    /* display: flex; */
+    display: flex;
     list-style: none;
     flex-direction: row;
+}
+
+#lista-menu > li:hover{
+    text-decoration: underline 3px;
 }
 
 #box-redes-sociais{
@@ -37,13 +44,12 @@ header{
     width: 280px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    background-color: lightseagreen;
+    padding-left: 50px;
+    padding-top: 15px;
 }
 
 .itens-redes-sociais{
     height: 50px;
     width: 50px;
     margin-left: 5px;
-    background-color: indigo;
 }

@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/produtos.css">
     <title>Hamburgueria</title>
 </head>
 <body>
     <header>
         <div id="img-logo">
-
+            <img src="img/sandwich.png" alt="">
         </div>
         <div id="box-menu">
             <ul id="lista-menu">
@@ -25,12 +29,61 @@
             </ul>
         </div>
         <div id="box-redes-sociais">
-            <div class="itens-redes-sociais"></div>
-            <div class="itens-redes-sociais"></div>
-            <div class="itens-redes-sociais"></div>
+            <div class="itens-redes-sociais">
+                <a href="https://pt-br.facebook.com/" target="_blank">
+                    <img src="img/facebook-circular-logo.png" alt="">
+                </a>
+            </div>
+            <div class="itens-redes-sociais">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/instagram.png" alt="">
+                </a>
+            </div>
+            <div class="itens-redes-sociais">
+                <a href="https://www.ifood.com.br/" target="_blank">
+                    <img src="img/delivery.png" alt="">
+                </a>
+            </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div id="box-container">
+
+        </div>
+
+        <!-- Seção menu e pesquisa -->     
+        <div class="menu-pesquisa">
+            <div class="box-menu">
+                <img src="img/menu.png" alt="">
+                <div class="subMenu">
+                    <div class="itemMenu"></div>
+                    <div class="itemMenu"></div>
+                    <div class="itemMenu"></div>
+                    <div class="itemMenu"></div>
+                    <div class="itemMenu"></div>
+                </div>
+            </div>
+
+            <div class="box-pesquisa">
+                <form name="frmPesquisa" action="" method="post">
+                    <div>
+                        <label>Pesquisa</label>
+                        <input type="text" name="txtPesquisa" size="15">
+                        <input id="botao" type="submit" name="btnPesquisar" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Seção menu e pesquisa fim -->
+
+        <!-- Seção produtos -->
+        <div id="box-produtos">
+            <div class="">
+
+            </div>
+        </div>
+        <!-- Seção produtos fim -->
+    </main>
+    <footer>teste</footer>
 </body>
 </html>
