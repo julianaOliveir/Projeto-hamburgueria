@@ -1,0 +1,34 @@
+.box-empresa{
+    width: 100%;
+    height: 300px;
+    /* display: flex;
+    flex-direction: column; */
+    
+    background-color: brown;
+}
+
+.box-empresa .titulo-empresa{
+    width: 100%;
+    height: 40px;
+    background-color: cadetblue;
+}
+
+.box-empresa .conteudo-imagem{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    background-color: darkgoldenrod;
+}
+
+.conteudo-imagem .descricao-conteudo{
+    width: 70%;
+    height: 260px;
+    background-color: lightskyblue;
+}
+
+.conteudo-imagem .img-conteudo-empresa{
+    width: 30%;
+    height: 260px;
+    background-color: lightgreen;
+}

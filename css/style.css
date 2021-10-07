@@ -17,10 +17,11 @@
 body{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main{
-    width: 100%;
+    width: 100vw;
     flex-grow: 1;
     /* background-color: lightyellow; */
 }
