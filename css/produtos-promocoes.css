@@ -14,29 +14,28 @@
 
 
 .box-produtos .info-produtos{
-    width: 250px;
-    height: 305px;
+    width: 280px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-around; */
     gap: 5px;
     padding: 10px;
-    border: solid 1px black;
-    border-radius: 5px;
-    /* background-color: black; */
+    /* background-color: #f1f1f0; */
+    border-radius: 2%;
 }
 
 .info-produtos .img-produto{
-    width: 210px;
-    height:125px;
-    border: solid 1px black;
-    /* background-color: cadetblue; */
+    width: 245px;
+    height:175px;
+    background-color: white;
 }
 
 .info-produtos .nome-produto{
     width: 230px;
     height: 25px;
+    color: #864000;
+    font-size: 1.2em;
     /* background-color: darkkhaki; */
 }
 
@@ -47,16 +46,23 @@
 }
 
 .info-produtos .saiba-mais{
-    width: 90px;
-    height: 50px;
-    border: solid 1px black;
-    /* background-color: deeppink; */
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #D44000;
 }
 
 .info-produtos .valor{
     width: 90px;
     height: 50px;
-    /* background-color: gainsboro; */
+    color: black;
+    text-align: center;
 }
 
 .info-produtos .saibamais-valor-conteiner{
@@ -69,7 +75,13 @@
     justify-content: space-around;
 }
 
-/* -------------------- Promoções ----------------------------- */
+.img-burguer{
+    width: 240px;
+    height:175px;
+    border-radius: 5px;
+}
+
+/* ------------------------------- Promoções ------------------------------- */
 
 .box-promocoes{
     width: 100%;
@@ -79,27 +91,27 @@
     align-items: flex-start;
     justify-content: center; 
     gap: 30px;
-    /* padding: 0 10px 10px 10px; */
+    padding-top: 5px;
 }
 
 .box-promocoes .titulo-promocoes{
     width: 100%;
     height: 40px;
-    background-color: rgb(137, 160, 95);
+    margin-top: 10px;
+    margin-left: 25px;
+    /* background-color: rgb(137, 160, 95); */
 }
 
 .box-promocoes .info-produtos{
-    width: 250px;
-    height: 305px;
+    width: 280px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-around; */
     gap: 5px;
     padding: 10px;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     border-radius: 5px;
-    /* background-color: black; */
 }
 
 .saibamais-valor-conteiner .box-valores{
@@ -114,12 +126,12 @@
 .box-valores .valor-desconto{
     width: 90px;
     height: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
-    background-color: orchid;
+    text-decoration: line-through;
 }
 
 .box-valores .valor-real{
     width: 90px;
     height: 30px;
-    background-color: midnightblue;
 }

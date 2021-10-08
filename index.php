@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="css/produtos-promocoes.css">
     <link rel="stylesheet" href="css/empresa.css">
     <link rel="stylesheet" href="css/destaques.css">
-    <link rel="stylesheet" href="css/lojas.css">
-    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="css/lojas-contato.css">
+    <title>Classic Burguer</title>
 </head>
     <header>
         <div id="img-logo">
-            <img src="img/sandwich.png" alt="">
+            <img class="logo" src="img/logo.png" alt="">
         </div>
         <div id="box-menu">
             <ul id="lista-menu">
@@ -50,7 +50,6 @@
         </div>
     </header>
     <main>
-
         <!-- banner -->
         <div id="box-img"></div>
         <!-- banner fim -->
@@ -60,20 +59,19 @@
             <div class="box-menu">
                 <img src="img/menu.png" alt="">
                 <div class="subMenu">
-                    <div class="itemMenu"></div>
-                    <div class="itemMenu"></div>
-                    <div class="itemMenu"></div>
-                    <div class="itemMenu"></div>
-                    <div class="itemMenu"></div>
+                    <div class="itemMenu">hamburguer</div>
+                    <div class="itemMenu">hamburguer</div>
+                    <div class="itemMenu">hamburguer</div>
+                    <div class="itemMenu">hamburguer</div>
+                    <div class="itemMenu">hamburguer</div>
                 </div>
             </div>
 
             <div class="box-pesquisa">
                 <form name="frmPesquisa" action="" method="post">
                     <div>
-                        <!-- <label>Pesquisa</label> -->
                         <input type="text" name="txtPesquisa" size="15" placeholder="Pesquisar">
-                        <input id="botao" type="submit" name="btnPesquisar" value="Buscar">
+                        <input class="botao" type="submit" name="btnPesquisar" value="Buscar">
                     </div>
                 </form>
             </div>
@@ -82,51 +80,210 @@
 
         <!-- Seção produtos -->
         <div class="box-produtos">
-            <!-- <div class="info-produtos">
-                <div class="img-produto"></div>
-                <div class="nome-produto">PRODUTO</div>
-                <div class="descricao-produto"></div>
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                    </p>
+                </div>
                 <div class="saibamais-valor-conteiner">
-                    <div class="saiba-mais">saiba mais</div>
-                    <div class="valor"></div>
+                    <div class="saiba-mais">
+                        <h4>
+                            SAIBA MAIS
+                        </h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
                 </div>
             </div>
 
             <div class="info-produtos">
-                <div class="img-produto"></div>
-                <div class="nome-produto">PRODUTO</div>
-                <div class="descricao-produto"></div>
-                <div class="saibamais-valor-conteiner">
-                    <div class="saiba-mais">saiba mais</div>
-                    <div class="valor"></div>
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
                 </div>
-            </div> -->
-            <?php
-            $index = 0;
-                for($index = 0; $index <= 7; $index++)
-                {
-            ?>
-                <div class="info-produtos">
-                    <div class="img-produto"></div>
-                    <div class="nome-produto">PRODUTO</div>
-                    <div class="descricao-produto">descrição</div>
-                    <div class="saibamais-valor-conteiner">
-                        <div class="saiba-mais">saiba mais</div>
-                        <div class="valor">$0,00</div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
                     </div>
                 </div>
-            <?php
-                }
-            ?>
+            </div>
+
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt=""> 
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- $index = 0;
+                for($index = 0; $index <= 11; $index++)
+                { -->
+            
+            <div class="info-produtos">
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="valor">
+                        <h4>$00,00</h4>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- } -->
         </div>
         <!-- Seção produtos fim -->
 
         <!-- Seção empresa -->
         <div class="box-empresa">
-            <div class="titulo-empresa"></div>
+            <div class="titulo-empresa">
+                <h3>A EMPRESA</h3>
+            </div>
             <div class="conteudo-imagem">
-                <div class="descricao-conteudo"></div>
-                <div class="img-conteudo-empresa"></div>
+                <div class="descricao-conteudo">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus doloremque laboriosam quis omnis. Praesentium cupiditate alias quis? Officia enim ullam laboriosam, nulla unde placeat facilis eius dignissimos?
+                    </p>
+                </div>
+                <div class="img-conteudo-empresa">
+                    <img  src="img/logo.png" alt="">
+                </div>
             </div>
         </div>
         <!-- Seção empresa fim -->
@@ -134,64 +291,108 @@
         <!-- Seção promoções -->
         <div class="box-promocoes">
             <div class="titulo-promocoes">
-                teste
+                <h3>NOSSAS PROMOÇÕES</h3>
             </div>
             <div class="info-produtos">
-                    <div class="img-produto"></div>
-                    <div class="nome-produto">PRODUTO</div>
-                    <div class="descricao-produto">descrição</div>
-                    <div class="saibamais-valor-conteiner">
-                        <div class="saiba-mais">saiba mais</div>
-                        <div class="box-valores">
-                            <div class="valor-desconto">123</div>
-                            <div class="valor-real">456</div>
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="box-valores">
+                        <div class="valor-desconto">
+                            <h6>$00,00</h6>
+                        </div>
+                        <div class="valor-real">
+                            <h4>$00,00</h4>
                         </div>
                     </div>
+                </div>
             </div>
 
             <div class="info-produtos">
-                    <div class="img-produto"></div>
-                    <div class="nome-produto">PRODUTO</div>
-                    <div class="descricao-produto">descrição</div>
-                    <div class="saibamais-valor-conteiner">
-                        <div class="saiba-mais">saiba mais</div>
-                        <div class="box-valores">
-                            <div class="valor-desconto">123</div>
-                            <div class="valor-real">456</div>
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="box-valores">
+                        <div class="valor-desconto">
+                            <h6>$00,00</h6>
+                        </div>
+                        <div class="valor-real">
+                            <h4>$00,00</h4>
                         </div>
                     </div>
+                </div>
             </div>
 
             <div class="info-produtos">
-                    <div class="img-produto"></div>
-                    <div class="nome-produto">PRODUTO</div>
-                    <div class="descricao-produto">descrição</div>
-                    <div class="saibamais-valor-conteiner">
-                        <div class="saiba-mais">saiba mais</div>
-                        <div class="box-valores">
-                            <div class="valor-desconto">123</div>
-                            <div class="valor-real">456</div>
+                <div class="img-produto">
+                    <img class="img-burguer"src="img/burguer-duplo.jpg" alt="">
+                </div>
+                <div class="nome-produto">
+                    <h4>PRODUTO</h4>
+                </div>
+                <div class="descricao-produto">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                    </p>
+                </div>
+                <div class="saibamais-valor-conteiner">
+                    <div class="saiba-mais">
+                        <h4>SAIBA MAIS</h4>
+                    </div>
+                    <div class="box-valores">
+                        <div class="valor-desconto">
+                            <h6>$00,00</h6>
+                        </div>
+                        <div class="valor-real">
+                            <h4>$00,00</h4>
                         </div>
                     </div>
+                </div>
             </div>
         </div>    
         <!-- Seção promoções fim -->
 
         <!-- Seção destaque  -->
         <div class="box-destaque">
-            <div class="titulo-destaque">DESTAQUE</div>
+            <div class="titulo-destaque">
+                <h3>CONFIRA NOSSOS DESTAQUES</h3>
+            </div>
             <div class="destaques">
                 <div class="img-destaque">
-                    <img src="img/sandwich.png" alt="">
+                    <img class="img-burguer-destaques"src="img/burguer-oz.PNG" alt="">
                 </div>
                 <div class="img-destaque">
-                    <img src="img/sandwich.png" alt="">
+                    <img class="img-burguer-destaques"src="img/burguer-oz.PNG" alt="">
                 </div>
                 <div class="img-destaque">
-                    <img src="img/sandwich.png" alt="">
+                    <img class="img-burguer-destaques"src="img/burguer-oz.PNG" alt="">
                 </div>
                 <div class="img-destaque">
-                    <img src="img/sandwich.png" alt="">
+                    <img class="img-burguer-destaques"src="img/burguer-oz.PNG"alt="">
                 </div>
             </div>
         </div>
@@ -199,10 +400,62 @@
 
         <!-- Seção nossas lojas  -->
         <div class="box-nossas-lojas">
-            
+            <div class="nossas-lojas">
+                <div class="titulo-nossas-lojas">
+                    <h3>NOSSAS LOJAS</h3>
+                </div>
+
+                <div class="local-loja">
+                    <h6>UNIDADE JANDIRA</h6>
+                </div>
+                <div class="unidades">
+                    <div class="img-loja"></div>
+                    <div class="conteudo-loja">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="local-loja">
+                    <h6>UNIDADE BARUERI</h6>
+                </div>
+                <div class="unidades">
+                    <div class="img-loja"></div>
+                    <div class="conteudo-loja">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora, dicta sed fuga soluta molestiae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-entre-contato">
+                <div class="titulo-contato">
+                    <h3>ENTRE EM CONTATO</h3>
+                </div>
+                <div class="form-icons">
+                    <div class="icons">
+                        <img src="img/perfil-de-usuario.png" alt="">
+                        <img src="img/o-email.png" alt="">
+                        <img src="img/phone-call.png" alt="">
+                    </div>
+                    <form name="frmContato" action="" method="post">
+                        <div class="formulario">
+                            <input type="text" name="txtNome" size="15" placeholder="Nome">
+                            <input type="text" name="txtEmail" size="15" placeholder="E-mail">
+                            <input type="text" name="txtCelular" size="15" placeholder="Celular">
+                            <input class="botao" type="submit" name="btnEnviar" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div></div>
+            </div>
         </div>
         <!-- Seção nossas lojas  fim -->
     </main>
-    <footer>footer</footer>
+    <footer>
+        <span>Copyright &copy; 2021 | Juliana Oliveira</span>
+    </footer>
 </body>
 </html>

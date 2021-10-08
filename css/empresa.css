@@ -1,16 +1,15 @@
 .box-empresa{
     width: 100%;
     height: 300px;
-    /* display: flex;
-    flex-direction: column; */
-    
-    background-color: brown;
+    padding-top: 5px;
+    background-color: #f1f1f0;
 }
 
 .box-empresa .titulo-empresa{
     width: 100%;
     height: 40px;
-    background-color: cadetblue;
+    /* margin-top: 30px; */
+    margin-left: 25px;
 }
 
 .box-empresa .conteudo-imagem{
@@ -18,17 +17,20 @@
     height: 260px;
     display: flex;
     flex-direction: row;
-    background-color: darkgoldenrod;
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .conteudo-imagem .descricao-conteudo{
     width: 70%;
     height: 260px;
-    background-color: lightskyblue;
+    text-align: center;
 }
 
 .conteudo-imagem .img-conteudo-empresa{
     width: 30%;
     height: 260px;
-    background-color: lightgreen;
+    margin-top: 30px;
+    text-align: center;
 }
