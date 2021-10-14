@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+/* --------------------------TITULOS---------------------------- */
+
+.titulo-img{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-img .cms{
+    width: 60%;
+    height: 120px;
+    margin-top: 50px;
+    color: #363636;
+}
+
+.titulo-img .img{
+    width: 40%;
+    height: 120px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1, h2{
+    /* margin-top: 50px; */
+    margin-left: 50px;
+}
+/* --------------------------NAVEGAÇÃO---------------------------- */
+
+.box-navegacao{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f0;
+}
+
+.box-navegacao .conteudo-imagens{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h6{
+    margin-top: 5px;
+}
+
+.box-navegacao .box-img{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-navegacao .conteudo-logout{
+    width: 40%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-navegacao .bem-vindo-usuario{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.conteudo-logout .box-logout{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+/* -------------------------SESSAO-------------------------- */
+
+.box-sessao{
+    width: 100%;
+    height: 400px;
+}
+
+.box-sessao .titulo-sessao{
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
