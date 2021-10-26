@@ -1,0 +1,34 @@
+header{
+    width: 100%;
+    height: 130px;
+    background-color: lawngreen;
+}
+
+
+.titulo-img{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-img .cms{
+    width: 60%;
+    height: 130px;
+    margin-top: 40px;
+    color: #363636;
+}
+
+.titulo-img .img{
+    width: 40%;
+    height: 130px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1, h2, h3{
+    margin-top: 5px;
+    margin-left: 50px;
+}

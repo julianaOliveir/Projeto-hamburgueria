@@ -28,7 +28,11 @@
 
                     <div class="box-senha">
                         <label>Senha: </label>
+<<<<<<< HEAD
+                        <input type="password" name="txtSenha" size="15">
+=======
                         <input type="text" name="txtSenha" size="15">
+>>>>>>> 2f5cb48211a9f7f41c8c8e42f4bf35ced2a2ef89
                     </div>
                     <input class="botao" type="submit" name="btnEntrar" value="Entrar">
                 </form>
