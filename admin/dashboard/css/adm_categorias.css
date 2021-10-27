@@ -14,12 +14,20 @@ body{
     justify-content: center;
 }
 
+.adm-categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .adm-categorias > form{
     width: 440px;
     height: 130px;
     border-radius: 10px;
     padding: 15px;
     border: 1px solid black;
+    margin-top: 100px;
     background-color: #f1f1f0;
 }
 
@@ -37,6 +45,11 @@ body{
     cursor: pointer;
 }
 
+#button:hover{
+    color: white;
+    background-color: rgb(128, 128, 128);
+}
+
 input{
     height: 30px;
     border: 2px solid #8d8d8c;
@@ -47,3 +60,81 @@ input{
 .conteudo-text{
     margin-bottom: 5px;
 }
+
+/* ------------------ Consulta de dados ------------------- */
+
+#consultaDeDados{
+    width: 800px;
+    min-height: 250px;
+    height: auto;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+
+}
+.tbl-consulta{
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+}
+.td-titulo{
+    width: 100%;
+    height: 40px;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+    border: solid 1px black; 
+}
+
+.tr-linhas{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.td-coluna-nome{
+    width: 70%;
+    height: 50px;
+    color: white;
+    border: solid 1px black;
+    background-color: rgb(128, 128, 128);
+}
+
+.td-coluna-opcoes{
+    width: 30%;
+    height: 50px;
+    color: white;
+    border: solid 1px black;
+    background-color: rgb(128, 128, 128);
+}
+
+.tr-linhas-img{
+    width: 30%;
+    height: 50px;
+}
+
+.td-coluna-nome-categ{
+    width: 70%;
+    height: 50px;
+    border: solid 1px black;
+    background-color: #f1f1f0;
+}
+
+.td-coluna-img{
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    border: solid 1px black;
+    background-color: #f1f1f0;
+}
+
+.img{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+

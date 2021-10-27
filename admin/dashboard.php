@@ -11,30 +11,23 @@
     <title>Gerenciamento do conteúdo do site</title>
 </head>
 <body>
-<<<<<<< HEAD
-   <?php
-   require_once('header.php');
-   ?>
-    <main>
-=======
-    <header></header>
-    <main>
+    <header>
         <div class="titulo-img">
             <div class="cms">
-                <h1>CMS</h1>
-                <h2>Gerenciamento de conteúdo do site</h2>
+                <h1>CMS | Classic Burguer</h1>
+                <!-- <h2>Classic Burguer</h2> -->
+                <h3>Gerenciamento de conteúdo do site</h3>
             </div>
             <div class="img">
-                <img src="img/gerenciamento.png" alt="">
+                <img src="dashboard/img/gerenciamento.png" alt="">
             </div>
         </div>
-
->>>>>>> 2f5cb48211a9f7f41c8c8e42f4bf35ced2a2ef89
+    </header>
+    <main>
         <div class="box-navegacao">
             <div class="conteudo-imagens">
                 <div class="box-img">
                     <div class="img-conteudo">
-<<<<<<< HEAD
                         <a href="dashboard/adm_produtos.php">
                             <img src="dashboard/img/produtos.png" alt="">
                             <h6> Adm. de Produtos </h6>
@@ -52,29 +45,16 @@
                             <h6> Contatos </h6>
                         </a>
                     </div>
+    
                     <div class="img-conteudo">
-                        <img src="dashboard/img/usuario.png" alt="">
-=======
-                        <img src="img/produtos.png" alt="">
-                        <h6> Adm. de Produtos </h6>
-                    </div>
-                    <div class="img-conteudo">
-                        <img src="img/categorias.png" alt="">
-                        <h6> Adm. de Categorias </h6>
-                    </div>
-                    <div class="img-conteudo">
-                        <img src="img/contatos.png" alt="">
-                        <h6> Contatos </h6>
-                    </div>
-                    <div class="img-conteudo">
-                        <img src="img/usuario.png" alt="">
->>>>>>> 2f5cb48211a9f7f41c8c8e42f4bf35ced2a2ef89
-                        <h6> Usuários </h6>
+                        <a href="dashboard/usuarios.php">
+                            <img src="img/usuario.png" alt="">
+                            <h6> Usuários </h6>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="conteudo-logout">
-<<<<<<< HEAD
             <!-- <div class="bem-vindo-usuario"> -->
                 <h5> Bem vindo "nome do usuário" </h5>
             <!-- </div> -->
@@ -83,18 +63,9 @@
                         <img src="dashboard/img/logout.png" alt="">
                         <h6>Logout</h6>
                     </a>
-=======
-            <div class="bem-vindo-usuario">
-                <h5> Bem vindo "nome do usuário" </h5>
-            </div>
-                <div class="box-logout">
-                    <img src="img/logout.png" alt="">
-                    <h6>Logout</h6>
->>>>>>> 2f5cb48211a9f7f41c8c8e42f4bf35ced2a2ef89
                 </div>
             </div>
         </div>
-
         <div class="box-sessao">
             <div class="titulo-sessao">
                 <h4>TITULO DA SESSAO</h4>

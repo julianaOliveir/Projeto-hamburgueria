@@ -16,13 +16,9 @@ body{
 }
 
 .box-autenticacao{
-    width: 400px;
+    width: 420px;
     height: 220px;
-<<<<<<< HEAD
     border: solid 2px #9c9c9a;
-=======
-    border: solid 2px black;
->>>>>>> 2f5cb48211a9f7f41c8c8e42f4bf35ced2a2ef89
     border-radius: 5px;
 }
 
@@ -67,12 +63,4 @@ input{
     margin-top: 10px;
     color: white;
     background-color: rgb(138, 3, 3);
-<<<<<<< HEAD
 }
-=======
-}
-
-
-
-
->>>>>>> 2f5cb48211a9f7f41c8c8e42f4bf35ced2a2ef89

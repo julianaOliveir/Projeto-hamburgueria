@@ -7,13 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <title> Usuários </title>
     <link rel="stylesheet" href="css/usuarios.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title> Usuários </title>
 </head>
 <body>
-<header></header>
+
+    <?php
+        require_once('header.php');
+    ?>
+
     <main>
-    <div class="box-usuarios">
+        <div class="box-usuarios">
             <form name="frmUsuarios" method="post" action="">
                 <div class="conteudo-info">
                     <label> Nome: </label>
@@ -33,9 +40,12 @@
                 <div class="button">
                     <input id="button" type="submit" name="btnCadastrarUsuario" value="Cadastrar">
                 </div>
-
             </form>
         </div>
     </main>
+
+    <?php
+        require_once('footer.php');
+    ?>
 </body>
 </html>

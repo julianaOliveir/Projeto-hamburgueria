@@ -8,11 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/adm_produtos.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Adm. Produtos</title>
 </head>
 <body>
-    <header>
-    </header>
+    
+    <?php
+        require_once('header.php');
+    ?>
+
     <main>
         <div class="adm-produtos">
             <form name="frmProdutos" method="post" action="">
@@ -48,7 +54,9 @@
             </form>
         </div>
     </main>
-    <footer>
-    </footer>
+    
+    <?php
+        require_once('footer.php');
+    ?>
 </body>
 </html>

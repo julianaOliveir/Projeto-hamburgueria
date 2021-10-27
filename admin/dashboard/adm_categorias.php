@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/adm_categorias.css">
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Adm. Categorias</title>
 </head>
 <body>
     
-        <?php
-            require_once('../header.php');
-        ?>
+    <?php
+        require_once('header.php');
+    ?>
     
     <main>
         <div class="adm-categorias">
@@ -30,8 +32,35 @@
                 </div>
             </form>
         </div>
+        
+        <div id="consultaDeDados">
+            <table class="tbl-consulta" >
+                <tr>
+                    <td class="td-titulo" colspan="5">
+                        <h2> Consulta de Categorias</h2>
+                    </td>
+                </tr>
+                <tr class="tr-linhas">
+                    <td class="td-coluna-nome"> Nome </td>
+                    <td class="td-coluna-opcoes"> Opções </td>
+                </tr>
+                <tr class="tr-linhas-img">
+                    <td class="td-coluna-nome-categ"></td>
+                    <td class="td-coluna-img">
+                        
+                        <img src="img/edit.png" alt="Editar" title="Editar" class="img">
+                    
+                        <img src="img/trash.png" alt="Excluir" title="Excluir" class="img">
+                    
+                        <img src="img/search.png" alt="Visualizar" title="Visualizar" class="img">
+                    </td>
+                </tr>
+            </table>
+        </div>    
     </main>
-    <footer>
-    </footer>
+    
+    <?php
+        require_once('footer.php');
+    ?>
 </body>
 </html>
