@@ -1,36 +1,39 @@
 <?php
     /*
-        Objetivo: Arquivo que recebe, trata e valida os dados dos clientes
-        Resposnsável: Juliana Oliveira
+        Objetivo: Arquivo responsável por receber, tratar e validar os dados;
+        Responsável: Juliana Oliveira 
     */
 
     require_once('../functions/config.php');
-    require_once(SRC . 'bd/inserirCategoria.php');
 
-    // Declaração de variavel
+    require_once('../bd/inserirCategoria.php');
+
     $nome = (string) null;
 
-    if($_SERVER['REQUEST_METHOD' == 'POST']){
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-        // Receber dados do formulário
-        $nome = $_POST['txtNome'];
+        $nome = $_POST ['txtNome'];
+        $id_categoria = 0;
 
-        // Validação de campo obrigatório
-        if($nome == null || $rg == null || $cpf == null){
-            echo("<script> alert ('". ERRO_CAIXA_VAZIA ."'); window.history.back();</script>");
-        }elseif (strlen($nome) > 100){
-            echo("<script> alert ('". ERRO_MAXLENGHT ."'); window.history.back();</script>");
+        // Validações de campos
+        if($nome == null){
+            echo("<script> alert ('". ERRO_CAIXA_VAZIA ."');window.history.back();</script>");
+        }elseif(strlen($nome) > 100){
+            echo("<script> alert ('". ERRO_MAXLENGHT ."');window.history.back();</script>");            
         }else{
-
-            // Array que encaminha a funcao a funcao inserir 
             $categoria = array (
-                "id" => $id,
-                "nome" => $nome
+                "nome" => $nome,
+                "id_categoria" => $id_categoria
             );
 
-            if(strtoupper($_GET['modo']) == 'SALVAR'){
+            if(inserir($categoria)){
+                echo("<script> alert ('".BD_MSG_INSERIR."'); window.location.href = '../dashboard/adm_categorias.php' </script>");
+            }else{
+                echo("<script> alert ('".BD_MSG_ERRO."'); window.history.back = '../dashboard/adm_categorias.php' </script>");
 
             }
         }
+
     }
+    
 ?>

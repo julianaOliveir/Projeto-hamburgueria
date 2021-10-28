@@ -1,25 +1,25 @@
 <?php
-    /*
-        Objetivo: Inserir os dados (categorias) no banco
-        Responsável: Juliana Oliveira
-    */
+   /*
+        Objetivo: Inserir dados do Cliente no Banco 
+        Responsável: Juliana Oliveira 
+   */
 
-    require_once('../bd/conexaoMysql.php');
+   require_once('../bd/conexaoMysql.php');
 
-    function inserir($arrayCategorias){
-        $sql = "insert into tbl_categoria(
-            nome
-        )values(
-            '". $arrayCategorias['nome']."'
-        )";
-        
-        // Função que estabelece a conexão com o banco 
-        $conexao = conexaoMysql();
+   function inserir($arrayCategorias){
+       $sql = "insert into tbl_categoria(
+                nome
+            )
+            values(
+                '". $arrayCategorias['nome']."'
+       )";
 
-        if(mysqli_query($conexao, $sql)){
-            return true; 
-        }else{
-            return false; 
-        }
-    }
+       $conexao = mysqlConexao();
+
+       if(mysqli_query($conexao, $sql)){
+           return true;
+       }else{
+           return false;
+       }
+   }
 ?>

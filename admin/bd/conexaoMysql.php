@@ -1,13 +1,12 @@
 <?php
-    /*
-        Objetivo : Arquivo para configurar a conexão com o Banco
+   /*
+        Objetivo : Arquivo para configurar a conexão com o Bando de Dados MySQL
         Responsável: Juliana Oliveira 
-    */
+   */
 
-    function conexaoMysql(){
+    function mysqlConexao(){
 
-        require_once('../functions/config.php');
-
+        // Variaveis para conexao com o banco
         $server = (string) BD_SERVER;
         $user = (string) BD_USER;
         $password = (string) BD_PASSWORD;
@@ -16,11 +15,9 @@
         if($conexao = mysqli_connect($server, $user, $password, $database)){
             return $conexao;
         }else{
-            echo(ERRO_CONEXAO_BD);
+            echo(ERRO_BD_CONEXAO);
             return false;
         }
     }
-
-    
 
 ?>

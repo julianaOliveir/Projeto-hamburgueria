@@ -1,3 +1,9 @@
+<?php
+    require_once('../functions/config.php');
+    require_once('../controles/exibeDadosCategorias.php');
+
+    $nome = (string) null;
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,10 +27,10 @@
     
     <main>
         <div class="adm-categorias">
-            <form name="frmCategorias" method="post" action="">
+            <form name="frmCategorias" method="post" action="../controles/recebeDadosCategorias.php">
                 <div class="conteudo-text">
                     <label> Categoria:  </label>
-                    <input type="text" name="txtNome" size="50" placeholder="Insira a categoria">
+                    <input type="text" name="txtNome" size="50" value="<?=$nome?>" placeholder="Insira a categoria" maxlength="100">
                 </div>
 
                 <div class="button">
@@ -44,8 +50,15 @@
                     <td class="td-coluna-nome"> Nome </td>
                     <td class="td-coluna-opcoes"> Opções </td>
                 </tr>
+
+                <?php
+                    $dadosCategorias = exibirCategorias();
+
+                    while($rsCategorias = mysqli_fetch_assoc($dadosCategorias)){
+                ?>
+
                 <tr class="tr-linhas-img">
-                    <td class="td-coluna-nome-categ"></td>
+                    <td class="td-coluna-nome-categ"><?=$rsCategorias['nome']?></td>
                     <td class="td-coluna-img">
                         
                         <img src="img/edit.png" alt="Editar" title="Editar" class="img">
@@ -55,6 +68,9 @@
                         <img src="img/search.png" alt="Visualizar" title="Visualizar" class="img">
                     </td>
                 </tr>
+                <?php
+                    }
+                ?>
             </table>
         </div>    
     </main>

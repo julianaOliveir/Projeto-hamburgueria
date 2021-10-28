@@ -11,10 +11,11 @@
     const BD_DATABASE = 'db_classic_burguer';
 
     // Erros do sistema
-    const ERRO_CONEXAO_BD = "Não foi possível realizar a conexão com o Banco de Dados";
-    const ERRO_CAIXA_VAZIA = "Preencha todos os campos";
-    const ERRO_MAXLENGHT = "Você ultrapassou o limite de caracteres permitido";
+    const ERRO_BD_CONEXAO = "Não foi possível realizar a conexão com o Banco de Dados";
+    const ERRO_CAIXA_VAZIA = "não foi possível realizar a operação. Preencha todos os campos.";
+    const ERRO_MAXLENGHT = "A quantidade de caracteres foi ultrapassada.";
 
-    //Constante para indicar a pasta raiz do servidor.
-    define('SRC' , $_SERVER ['DOCUMENT_ROOT'] . 'xampp/back-end/Projeto-hamburgueria');
+    // Validações
+    const BD_MSG_INSERIR = "Seu registro foi salvo com  sucesso!";
+    const BD_MSG_ERRO = "ERROR: não foi possível manipular os dados no Banco de Dados";
 ?>
