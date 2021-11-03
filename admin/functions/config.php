@@ -18,4 +18,5 @@
     // Validações
     const BD_MSG_INSERIR = "Seu registro foi salvo com  sucesso!";
     const BD_MSG_ERRO = "ERROR: não foi possível manipular os dados no Banco de Dados";
+    const BD_MSG_DELETE = "Dados excluídos com sucesso";
 ?>

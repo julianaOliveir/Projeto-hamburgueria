@@ -3,6 +3,7 @@
     require_once('../controles/exibeDadosCategorias.php');
 
     $nome = (string) null;
+    $id = (int) 0;
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -51,6 +52,8 @@
                     <td class="td-coluna-opcoes"> Opções </td>
                 </tr>
 
+
+
                 <?php
                     $dadosCategorias = exibirCategorias();
 
@@ -61,11 +64,11 @@
                     <td class="td-coluna-nome-categ"><?=$rsCategorias['nome']?></td>
                     <td class="td-coluna-img">
                         
-                        <img src="img/edit.png" alt="Editar" title="Editar" class="img">
-                    
-                        <img src="img/trash.png" alt="Excluir" title="Excluir" class="img">
-                    
-                        <img src="img/search.png" alt="Visualizar" title="Visualizar" class="img">
+                        <img src="img/edit.png" alt="Editar" title="Editar" class="img">    
+
+                        <a onclick=" return confirm('Tem certeza que deseja excluir?');" href="../controles/excluirDadosCategoria.php?id=<?=$rsCategorias['id_categoria']?>">
+                            <img src="img/trash.png" alt="Excluir" title="Excluir" class="img">                    
+                        </a>
                     </td>
                 </tr>
                 <?php
@@ -73,6 +76,7 @@
                 ?>
             </table>
         </div>    
+
     </main>
     
     <?php

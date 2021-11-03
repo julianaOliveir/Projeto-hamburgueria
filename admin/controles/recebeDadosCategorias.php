@@ -12,8 +12,7 @@
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-        $nome = $_POST ['txtNome'];
-        $id_categoria = 0;
+        $nome = $_POST ['txtNome'];  
 
         // Validações de campos
         if($nome == null){

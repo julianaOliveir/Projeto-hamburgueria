@@ -13,3 +13,5 @@ create table tbl_categoria(
 show tables;
 
 desc tbl_categoria;
+
+select * from tbl_categoria;

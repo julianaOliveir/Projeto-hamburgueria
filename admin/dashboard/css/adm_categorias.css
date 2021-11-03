@@ -120,6 +120,7 @@ input{
     width: 70%;
     height: 50px;
     border: solid 1px black;
+    text-align: center;
     background-color: #f1f1f0;
 }
 

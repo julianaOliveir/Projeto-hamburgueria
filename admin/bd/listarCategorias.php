@@ -15,4 +15,14 @@
 
         return $select;
     }
+
+    function buscar(){
+        $sql = "select * from tbl_categoria order by id_categoria desc";
+
+        $conexao =  mysqlConexao();
+
+        $select = mysqli_query($conexao, $sql);
+
+        return $select;
+    }
 ?>

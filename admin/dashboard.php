@@ -69,7 +69,7 @@
         <div class="box-sessao">
             <div class="titulo-sessao">
                 <h4>TITULO DA SESSAO</h4>
-            </div>
+            </div>       
         </div>
     </main>
     <footer>
